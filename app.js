@@ -16,7 +16,7 @@ function getData (x) {
 // var url = "https://api.coindesk.com/v1/bpi/historical/close.json";
 var url1 = "https://min-api.cryptocompare.com/data/v2/histoday?fsym=";
 var url2 = x;
-var url3 = "&tsym=USD&limit=30&api_key=ef87f4ab9c38476af4b03795100283a537e88133d52c9402d3320315283de794";
+var url3 = "&tsym=USD&limit=30&api_key=" + ccAPI;
 var url = url1 + url2 + url3;
 
 d3.json(url).then(function(data) {
